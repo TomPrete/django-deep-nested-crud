@@ -1,0 +1,5 @@
+<h1>Dish List from {{ dish.menu.menu_type }}</h1>
+
+{% for dish in dishes %}
+<p><a href="{% url 'dish_detail' rest_id=dish.menu.restaurant.id menu_id=dish.menu.id dish_id=dish.id %}">{{ dish.name }}</a></p>
+{% endfor %}

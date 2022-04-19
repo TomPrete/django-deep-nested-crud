@@ -1,0 +1,7 @@
+<h1>{{ title }}</h1>
+
+{% for rest in all_restaurants %}
+<p><a href="{% url 'restaurant_detail' rest.id %}">{{ rest.name }}</a></p>
+{% endfor %}
+
+<a href="#">List of Menus</a>

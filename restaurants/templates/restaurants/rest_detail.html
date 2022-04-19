@@ -1,0 +1,4 @@
+<h1>{{ restaurant.name }}</h1>
+<h2>{{ restaurant.cuisine_type|capfirst }}</h2>
+
+<a href="{% url 'menu_list' rest_id=restaurant.id %}">List of Menus</a>

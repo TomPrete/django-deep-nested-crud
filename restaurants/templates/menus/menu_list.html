@@ -1,0 +1,5 @@
+<h1>Menu List</h1>
+
+{% for menu in menus %}
+<p><a href="{% url 'menu_detail' rest_id=menu.restaurant.id menu_id=menu.id %}">{{ menu.menu_type }}</a></p>
+{% endfor %}
